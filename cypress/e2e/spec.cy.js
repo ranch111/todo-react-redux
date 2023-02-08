@@ -11,4 +11,5 @@ it('adds todos', () => {
   cy.contains('[data-cy=todo]', 'Learn Cypress').should('be.visible')
   cy.contains('[data-cy="pending-count"]', '1')
   cy.get('[data-cy=todo]').should('have.length', 1)
+  cy.visit('https://www.cnn.com/')
 })
